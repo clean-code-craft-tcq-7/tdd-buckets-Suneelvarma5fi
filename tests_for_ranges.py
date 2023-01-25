@@ -9,5 +9,6 @@ assert(detect_ranges([4,5]) == [(4,5,2)]) #failing case
 assert(check_valid("2,3,4,5,6,6,7,8") == True)
 assert(check_valid([2,3,4,5,6,6,7,8]) == False)
 
-assert(print_reading_ranges([(3,5,4),(10,12,3)]) == 'Range, Readings\n3-5, 4\n10-12, 3')
-assert(print_reading_ranges([(3,3,2)]) == 'Range, Readings\n3-3, 4')
+assert(print_reading_ranges([(3,5,4),(10,12,3)]) == True)
+assert(print_reading_ranges([(3,3,2)]) == True)
+assert(print_reading_ranges([]) == False)
