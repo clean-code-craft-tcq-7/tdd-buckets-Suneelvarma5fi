@@ -1,6 +1,5 @@
 def check_valid(inputString):
 	if type(inputString) == str:
-		readings = list(map(int, inputString.split(',')))
-		return readings
+		return True
 	else:
 		return False
