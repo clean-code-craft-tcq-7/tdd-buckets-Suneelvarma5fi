@@ -7,7 +7,7 @@ def detect_ranges(samples):
     samples.sort()
     current_range,count,result = [samples[0], samples[0]],1,[]
     for i in range(1, len(samples)):
-        if samples[i] == current_range[1] or samples[i] == current_range[1] + 1:
+        if samples[i] in (current_range[1],current_range[1] + 1):
             current_range[1] = samples[i]
             count += 1
         else:
